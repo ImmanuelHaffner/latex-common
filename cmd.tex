@@ -5,3 +5,7 @@
 
 \newcommand{\Reg}{\textsuperscript{\textregistered}\xspace}
 \newcommand{\Copy}{\textsuperscript{\textcopyright}\xspace}
+
+% Multiline cell inside a tabular
+\newcommand{\multiline}[2][c]{%
+  \begin{tabular}[#1]{@{}l@{}}#2\end{tabular}}
