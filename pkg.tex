@@ -1,31 +1,50 @@
-% vim: set nospell:
-
-\usepackage{lmodern}                % Latin Modern Font
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}         % Special Chars
-\usepackage[babel]{csquotes}        % context-sensitive quotation
+% vim: set nospell: set formatoptions-=a:
 \usepackage[]{microtype}            % general appearance of text
-
-\usepackage{wrapfig}                % wrapfigure
-\usepackage{titlesec}
-\usepackage{datetime}
-\usepackage{marvosym}               % euro symbol
-\usepackage{fancyhdr}
+\usepackage[babel]{csquotes}        % context-sensitive quotation
 \usepackage[dvipsnames]{xcolor}     % some predefined colors
-\usepackage{xspace}                 % intelligent trailing white-space
-\usepackage{emptypage}              % Suppress page numbers and headings on empty pages
-\usepackage{subcaption}             % Used for subcaptions and subfigures.
-\usepackage{float}                  % Introduces the boxed float, the ruled float and the plaintop float
+\usepackage[plain]{fancyref}        % provides \fref and \Fref for referencing
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}         % special chars
+\usepackage{algorithm}
+\usepackage{algpseudocode}          % pseudo code with algorithmicx environment
 \usepackage{amsmath}
 \usepackage{amssymb}                % Math symbols
 \usepackage{amsthm}                 % Theorem typesetting
-\usepackage{stmaryrd}               % Math symbols
+\usepackage{babel}                  % typographical and hyphenation rules
 \usepackage{bbm}                    % Math symbols
+\usepackage{booktabs}               % adds some rulers (toprule, midrule, bottomrule)
+\usepackage{datetime}               % provides \printdate and various date formats
+\usepackage{emptypage}              % Suppress page numbers and headings on empty pages
 \usepackage{enumitem}               % modifiable enumerations
-\usepackage{subscript}              % \textsubscript (like textsuperscript)
+\usepackage{fancyhdr}
+\usepackage{float}                  % Introduces the boxed float, the ruled float and the plaintop float
+\usepackage{framed}                 % framebox environments
+\usepackage{hyperref}               % for URLs and other links
+\usepackage{isodate}                % date formatting
 \usepackage{lastpage}               % for \pageref{LastPage}
-
+\usepackage{lipsum}                 % print Lorem ipsum with \lipsum
+\usepackage{listings}
+\usepackage{lmodern}                % Latin Modern Font
+\usepackage{lstautogobble}          % smart indent, no trailing newline
+\usepackage{makecell}               % lets one custimize tabulars
+\usepackage{marvosym}               % euro symbol
+\usepackage{marvosym}               % more symbols
+\usepackage{mathtools}              % math tools for amsmath
+\usepackage{multirow}               % similar to multicolumn, for tabular environments
+\usepackage{stmaryrd}               % Math symbols
+\usepackage{subcaption}             % Used for subcaptions and subfigures.
+\usepackage{subscript}              % \textsubscript (like textsuperscript)
+\usepackage{tabularx}               % highly customizable tabular
+\usepackage{tabu}                   % smart tabular (also for math-mode)
+\usepackage{textcomp}               % more symbols
 \usepackage{tikz}
+\usepackage{titlesec}               % customize chapter/section title formatting
+\usepackage{tocloft}                % allows customizing the ToC
+\usepackage{varwidth}               % like minipage, but fits its content
+\usepackage{wasysym}                % more symbols
+\usepackage{wrapfig}                % wrapfigure
+\usepackage{xspace}                 % intelligent trailing white-space
+
 \usetikzlibrary{
     arrows,
     arrows.meta,
@@ -41,26 +60,6 @@
     snakes,
 }
 
-\usepackage{varwidth}               % like minipage, but fits its content
-\usepackage{tabu}                   % smart tabular (also for math-mode)
-\usepackage{tabularx}               % highly customizable tabular
-\usepackage{listings}
-\usepackage{lstautogobble}          % smart indent, no trailing newline
-\usepackage[plain]{fancyref}        % provides \fref and \Fref for referencing
-\usepackage{hyperref}               % for URLs and other links
-\usepackage{booktabs}               % adds some rulers (toprule, midrule, bottomrule)
-\usepackage{makecell}               % lets one custimize tabulars
-\usepackage{multirow}               % similar to multicolumn, for tabular environments
-\usepackage{tocloft}                % allows customizing the ToC
-\usepackage{mathtools}              % math tools for amsmath
-\usepackage{algorithm}
-\usepackage{algpseudocode}
-\usepackage{framed}                 % framebox environments
-
-\usepackage{wasysym}                % more symbols
-\usepackage{marvosym}               % more symbols
-\usepackage{textcomp}               % more symbols
-
 
 %===============================================================================
 %
@@ -68,6 +67,4 @@
 %
 %===============================================================================
 
-%\usepackage[top=2cm,left=2cm,right=2cm]{geometry}
-%\usepackage[german]{babel}          % typographical and hyphenation rules
-%\usepackage[german]{isodate}        % date formatting
+% gemoetry - Modify document dimensions
